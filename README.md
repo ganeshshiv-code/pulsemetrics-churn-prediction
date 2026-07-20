@@ -10,25 +10,12 @@ Project 1 helped explain **who churned and when** using SQL and a Power BI dashb
 
 ## Finding
 
-Tenure and plan tier are the strongest predictors of churn — newer, lower-tier
-customers are consistently more likely to churn. Support ticket volume and
-satisfaction show very weak *linear* correlation with churn (0.06 and -0.06),
-but Project 1's bucketed SQL analysis found a real, strong pattern concentrated
-at the extreme (8+ tickets) — a reminder that correlation coefficients can miss
-non-linear effects. The tuned model achieves **67.9% recall**, correctly
-identifying roughly 2 out of every 3 customers who will actually churn.
+Tenure and plan tier were the strongest predictors of churn. Newer customers on lower-tier plans were consistently more likely to leave. Support ticket volume and satisfaction showed very weak linear correlation with churn (0.06 and -0.06), but my Project 1 SQL bucket analysis revealed a clear pattern among customers with **8+ support tickets**. This shows that correlation alone can miss important patterns that appear only in specific groups. After tuning, the model achieved **67.9% recall**, correctly identifying around **2 out of every 3 customers** who eventually churned.
 
-**So what:** A model that only catches 1 in 3 at-risk customers would leave most
-preventable churn undetected. By deliberately trading some accuracy for recall
-— prioritizing catching real churners over avoiding false alarms — PulseMetrics
-gets a usable early-warning signal, because missing a real churner costs the
-full customer relationship, while a false alarm only costs an unnecessary
-retention outreach.
+**Business Impact:** For churn prediction, missing a customer who is about to leave is more costly than contacting a customer who was not actually going to churn. That's why I prioritized improving recall, even though it resulted in more false positives. The model provides an early warning system that helps the business take action before customers leave.
 
-**Recommendation:** Score all currently active customers monthly with this
-model and prioritize proactive retention outreach — the same 60-day onboarding
-check-in from Project 1 — for anyone flagged as high-risk, focusing especially
-on new customers on lower-tier plans with high support-ticket volume.
+**Recommendation:** Score all active customers monthly using this model and prioritize retention efforts for those identified as high risk. Focus especially on newer customers, lower-tier plans, and customers with high support ticket volume by using proactive onboarding and targeted retention campaigns.
+
 
 ## Methodology
 
