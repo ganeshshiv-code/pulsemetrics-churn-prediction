@@ -1,7 +1,7 @@
 # PulseMetrics — Churn Prediction (Project 2)
 
 **Tools:** Python (pandas, scikit-learn, matplotlib, seaborn) in Jupyter
-**Type:** Portfolio project — continues the PulseMetrics SaaS dataset from
+**Project Type:** A portfolio project that builds on the PulseMetrics SaaS dataset used in
 [Project 1](https://github.com/ganeshshiv-code/pulsemetrics-churn-retention-analysis)
 
 ## Business Context
