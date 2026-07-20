@@ -6,10 +6,7 @@
 
 ## Business Context
 
-Project 1 answered *who* churns and *when*, using SQL and a Power BI dashboard —
-a descriptive, backward-looking analysis. This project asks the natural next
-question: **can we flag at-risk customers before they churn, instead of finding
-out after?**
+Project 1 helped explain **who churned and when** using SQL and a Power BI dashboard. Building on that analysis, this project asks the next business question: **Can we identify customers who are at risk of churning before they actually leave?**
 
 ## Finding
 
